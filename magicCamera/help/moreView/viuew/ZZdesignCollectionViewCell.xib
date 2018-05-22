@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="desCollec" id="gTV-IL-0wX" customClass="ZZdesignCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="243" height="265"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="243" height="265"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="material_pic1_default" translatesAutoresizingMaskIntoConstraints="NO" id="WQ2-S9-Qnt">
+                        <rect key="frame" x="0.0" y="0.0" width="243" height="216"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-09-05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfK-ph-rv3">
+                        <rect key="frame" x="10" y="235" width="74" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="cuc-cI-ZuL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzo-DY-KuT">
+                        <rect key="frame" x="214" y="235" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="g3f-XR-h23"/>
+                            <constraint firstAttribute="height" constant="20" id="vEj-Ng-gAJ"/>
+                        </constraints>
+                        <state key="normal" image="order_delete_default"/>
+                        <connections>
+                            <action selector="clickDelete:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9Qf-DK-u2P"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NF-AP-mOA">
+                        <rect key="frame" x="185" y="233" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="8kQ-cZ-ReI"/>
+                            <constraint firstAttribute="width" secondItem="8NF-AP-mOA" secondAttribute="height" id="fsm-d8-idA"/>
+                        </constraints>
+                        <state key="normal" image="转发.png"/>
+                        <connections>
+                            <action selector="clickShar:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Mfb-IS-vM9"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们的家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6p-NQ-F2O">
+                        <rect key="frame" x="10" y="215" width="53.5" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="gag-BR-YYb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WQ2-S9-Qnt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="15C-bG-jEi"/>
+                <constraint firstItem="IfK-ph-rv3" firstAttribute="height" secondItem="A6p-NQ-F2O" secondAttribute="height" id="1sU-3t-4kL"/>
+                <constraint firstItem="IfK-ph-rv3" firstAttribute="top" secondItem="A6p-NQ-F2O" secondAttribute="bottom" constant="-10" id="8y3-DK-UQx"/>
+                <constraint firstItem="A6p-NQ-F2O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="JmI-tE-uXg"/>
+                <constraint firstItem="WQ2-S9-Qnt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PGK-uc-SoR"/>
+                <constraint firstItem="uzo-DY-KuT" firstAttribute="leading" secondItem="8NF-AP-mOA" secondAttribute="trailing" constant="4" id="QQG-0b-rUa"/>
+                <constraint firstAttribute="bottom" secondItem="WQ2-S9-Qnt" secondAttribute="bottom" constant="49" id="SdO-t1-2Eo"/>
+                <constraint firstAttribute="bottom" secondItem="IfK-ph-rv3" secondAttribute="bottom" id="SyT-cc-Kap"/>
+                <constraint firstItem="uzo-DY-KuT" firstAttribute="top" secondItem="WQ2-S9-Qnt" secondAttribute="bottom" constant="19" id="Vm4-g3-WNd"/>
+                <constraint firstItem="8NF-AP-mOA" firstAttribute="centerY" secondItem="uzo-DY-KuT" secondAttribute="centerY" id="WnZ-0n-LYE"/>
+                <constraint firstAttribute="trailing" secondItem="WQ2-S9-Qnt" secondAttribute="trailing" id="lkk-5B-SWn"/>
+                <constraint firstItem="A6p-NQ-F2O" firstAttribute="top" secondItem="WQ2-S9-Qnt" secondAttribute="bottom" constant="-1" id="nz6-mS-eTD"/>
+                <constraint firstAttribute="trailing" secondItem="uzo-DY-KuT" secondAttribute="trailing" constant="9" id="oS3-fT-ccc"/>
+                <constraint firstItem="IfK-ph-rv3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="s61-Da-HsF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="243" height="265"/>
+            <connections>
+                <outlet property="deleteBtn" destination="uzo-DY-KuT" id="dEH-c5-EtV"/>
+                <outlet property="downlabel" destination="IfK-ph-rv3" id="ROb-pf-XmK"/>
+                <outlet property="sharBtn" destination="8NF-AP-mOA" id="Xs8-ea-Ts4"/>
+                <outlet property="showImageView" destination="WQ2-S9-Qnt" id="bG8-ak-dXS"/>
+                <outlet property="upLabel" destination="A6p-NQ-F2O" id="3zZ-g8-P79"/>
+            </connections>
+            <point key="canvasLocation" x="-78.5" y="63.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="material_pic1_default" width="175" height="127"/>
+        <image name="order_delete_default" width="55" height="56"/>
+        <image name="转发.png" width="16" height="16"/>
+    </resources>
+</document>

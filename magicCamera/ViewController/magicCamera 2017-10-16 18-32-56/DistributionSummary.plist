@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>magicCamera.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>70B14640AF07CCCE47155F1E5BA4D2A10C83F8F0</string>
+				<key>dateExpires</key>
+				<string>2018/10/16</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>FSL2C54QHN.com.zhanzhan.magicCame</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>FSL2C54QHN</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>FSL2C54QHN.com.zhanzhan.magicCame</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>magicCamera.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>0ca506b7-82ba-4d83-aaf5-ac4133ad1813</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.zhanzhan.magicCame</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>FSL2C54QHN</string>
+				<key>name</key>
+				<string>shaobin xu</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

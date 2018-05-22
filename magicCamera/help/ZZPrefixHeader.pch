@@ -1,0 +1,108 @@
+//
+//  ZZPrefixHeader.pch
+//  magicCamera
+//
+//  Created by 张展展 on 2017/9/22.
+//  Copyright © 2017年 张展展. All rights reserved.
+//
+
+#ifndef ZZPrefixHeader_pch
+#define ZZPrefixHeader_pch
+
+
+
+#import "UIView+ZZLayer.h"
+#import "CommonTool.h"
+#import "APIHeader.h"
+
+//
+#import <AFNetworking.h>
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "WXApi.h"
+//画图
+#import "LXFDrawBoard.h"
+#import "LXFRectangleBrush.h"
+#import "LXFLineBrush.h"
+#import "LXFArrowBrush.h"
+#import "LXFTextBrush.h"
+#import "LXFMosaicBrush.h"
+
+#import "XMFSegmentView.h"
+#import "ZZtextView.h"
+
+#import "MBProgressHUD+XPS.h"
+
+#import "SDWebImageManager.h"
+#import <GPUImage/GPUImage.h>
+#import <BmobSDK/Bmob.h>
+#import "SDWebImageManager.h"
+#import "afnObject.h"
+#import "UIColor+Hex.h"
+#import "ZJProgressHUD.h"
+#import "XHToast.h"
+#import "UIImageView+WebCache.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "FCPPFaceSet.h"
+#import "SMGlobalMethod.h"
+#import "sywBaseViewController.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "XXBaseViewController.h"
+#import "XXBaseTableViewController.h"
+#import "MJExtension.h"
+#import "HWHttpTool.h"
+
+#import "UIResponder+FirstResponder.h"
+
+#import "XXJudgment.h"
+
+#import "ZZUserModel.h"
+#import "ZZUserManager.h"
+
+#define  SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define  SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+
+// song-宏定义
+#define DesignHeight 1334.0
+#define DesignWidth 750.0
+#define XMultiple (SCREEN_HEIGHT<812.0 ? 568.0 :667.0)
+#define SafeAreaTopHeight (SCREEN_HEIGHT<812.0 ? 64 : 88)
+#define kWJHeightCoefficient (SCREEN_HEIGHT<812.0 ? 568.0 :667.0)
+#define GetWidth(width)  (width)/DesignWidth*SCREEN_WIDTH
+//判断是不是4s如果是则高度和5s一样的比例
+#define GetHeight(height) (SCREEN_HEIGHT > 568 ? (height)/DesignHeight*SCREEN_HEIGHT : (height)/DesignHeight*568)
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define WIDTH  [UIScreen mainScreen].bounds.size.width
+#define BackColor [UIColor colorWithHexString:@"#f0f0f0"]
+//获取RGB颜色
+#define  RGBA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define YEllOWColor [UIColor colorWithRed:248/255.0 green:219/255.0 blue:66/255.0 alpha:1]
+
+
+#define Mask8(x)  (  (x) & 0xFF )
+
+#define R(x)  ( Mask8(x) )
+#define G(x)  ( Mask8(x >> 8 )  )
+#define B(x)  ( Mask8(x >> 16)  )
+#define A(x)  ( Mask8(x >> 24)  )
+
+#define RGBAMake(r, g, b, a)  (  Mask8(r) | Mask8(g) << 8 | Mask8(b) << 16 | Mask8(a) << 24 )
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define ratew  kScreenW/375.0
+#define rateh   kScreenH/667.0
+
+
+#define initVCFromSTBWithIdentifer(name,x) [[UIStoryboard storyboardWithName:name bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:x]
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ZZPrefixHeader_pch */

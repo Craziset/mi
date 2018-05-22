@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="setnewcell" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="ZZsetnewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接受新消息通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrU-ee-1Zu">
+                        <rect key="frame" x="10" y="5" width="100" height="62.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="NEJ-kE-BiQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbG-2M-MDs">
+                        <rect key="frame" x="298" y="23" width="54" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="CiK-WG-Vtp"/>
+                            <constraint firstAttribute="width" secondItem="FbG-2M-MDs" secondAttribute="height" multiplier="2:1" id="pi6-uA-bmv"/>
+                        </constraints>
+                        <state key="normal" image="off"/>
+                        <state key="selected" image="on"/>
+                        <connections>
+                            <action selector="clickSwitchBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aQN-rs-Zlu"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nrU-ee-1Zu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="OBW-R7-4jP"/>
+                    <constraint firstItem="nrU-ee-1Zu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VWf-78-WAJ"/>
+                    <constraint firstItem="FbG-2M-MDs" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Xxz-VJ-gyW"/>
+                    <constraint firstItem="FbG-2M-MDs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zu9-eY-z14"/>
+                    <constraint firstAttribute="bottom" secondItem="nrU-ee-1Zu" secondAttribute="bottom" constant="5" id="xQT-Ss-jdq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="49" y="66.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="off" width="30" height="15"/>
+        <image name="on" width="25" height="12"/>
+    </resources>
+</document>

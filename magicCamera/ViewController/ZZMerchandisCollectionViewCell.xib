@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="mercell" id="gTV-IL-0wX" customClass="ZZMerchandisCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="337"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="337"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_nopic.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tw7-ru-vrT">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="269.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJu-dB-RfY">
+                        <rect key="frame" x="41" y="269.5" width="242" height="31.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="242" id="UCL-Ff-Us6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymm-6c-MHg">
+                        <rect key="frame" x="41" y="306" width="242" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="242" id="z32-5u-feK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulF-0N-xQJ" customClass="QuartView">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="269.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uVk-XI-9Kb">
+                        <rect key="frame" x="42" y="104" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ulF-0N-xQJ" firstAttribute="bottom" secondItem="Tw7-ru-vrT" secondAttribute="bottom" id="Fpc-0V-bW3"/>
+                <constraint firstAttribute="trailing" secondItem="Tw7-ru-vrT" secondAttribute="trailing" id="LcP-z9-2Lj"/>
+                <constraint firstItem="ulF-0N-xQJ" firstAttribute="leading" secondItem="Tw7-ru-vrT" secondAttribute="leading" id="NFi-fr-obv"/>
+                <constraint firstItem="Tw7-ru-vrT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="R6P-gS-LME"/>
+                <constraint firstItem="Tw7-ru-vrT" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="4/5" id="UkO-hW-dCa"/>
+                <constraint firstItem="Tw7-ru-vrT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="V0q-tO-c9e"/>
+                <constraint firstItem="ymm-6c-MHg" firstAttribute="height" secondItem="gJu-dB-RfY" secondAttribute="height" id="Xvn-EQ-Osu"/>
+                <constraint firstItem="ymm-6c-MHg" firstAttribute="centerX" secondItem="Tw7-ru-vrT" secondAttribute="centerX" id="ZNT-Vl-J6k"/>
+                <constraint firstItem="ymm-6c-MHg" firstAttribute="top" secondItem="gJu-dB-RfY" secondAttribute="bottom" constant="5" id="bfE-1G-NWX"/>
+                <constraint firstItem="ulF-0N-xQJ" firstAttribute="trailing" secondItem="Tw7-ru-vrT" secondAttribute="trailing" id="gKa-L9-URS"/>
+                <constraint firstAttribute="bottom" secondItem="ymm-6c-MHg" secondAttribute="bottom" id="gtq-zT-SO9"/>
+                <constraint firstItem="ymm-6c-MHg" firstAttribute="leading" secondItem="gJu-dB-RfY" secondAttribute="leading" id="qJu-n7-vdH"/>
+                <constraint firstItem="ulF-0N-xQJ" firstAttribute="top" secondItem="Tw7-ru-vrT" secondAttribute="top" id="smW-GM-xfw"/>
+                <constraint firstItem="gJu-dB-RfY" firstAttribute="top" secondItem="Tw7-ru-vrT" secondAttribute="bottom" id="syi-ZX-5Ya"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="324" height="337"/>
+            <connections>
+                <outlet property="downLabel" destination="ymm-6c-MHg" id="3Zc-0C-ac4"/>
+                <outlet property="imageMerchandisCollection" destination="Tw7-ru-vrT" id="we3-9I-0Ki"/>
+                <outlet property="imgView" destination="ulF-0N-xQJ" id="p2E-00-1QU"/>
+                <outlet property="orgImage" destination="uVk-XI-9Kb" id="Zyw-MV-XP8"/>
+                <outlet property="upLebel" destination="gJu-dB-RfY" id="7fd-dj-05K"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="41"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="common_nopic.png" width="423" height="424"/>
+    </resources>
+</document>

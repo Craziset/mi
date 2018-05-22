@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "magicCamera/faceView/viewCon/ViewController.m"
+            timestampString = "548677097.868336"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "690"
+            endingLineNumber = "690"
+            landmarkName = "-segmentView:didSelectItemsAtIndex:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController segmentView:didSelectItemsAtIndex:]"
+                  moduleName = "magicCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/long/Downloads/mi6%E6%9C%80%E6%96%B0%E4%BB%A3%E7%A0%81/magicCamera%205/magicCamera/faceView/viewCon/ViewController.m"
+                  timestampString = "548676735.663474"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "690"
+                  endingLineNumber = "690"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__52-[ViewController segmentView:didSelectItemsAtIndex:]_block_invoke"
+                  moduleName = "magicCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/long/Downloads/mi6%E6%9C%80%E6%96%B0%E4%BB%A3%E7%A0%81/magicCamera%205/magicCamera/faceView/viewCon/ViewController.m"
+                  timestampString = "548676735.6658061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "691"
+                  endingLineNumber = "691"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.447"
+                  moduleName = "magicCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/long/Downloads/mi6%E6%9C%80%E6%96%B0%E4%BB%A3%E7%A0%81/magicCamera%205/magicCamera/faceView/viewCon/ViewController.m"
+                  timestampString = "548676735.6680191"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "690"
+                  endingLineNumber = "690"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "magicCamera/faceView/viewCon/ViewController.m"
+            timestampString = "548677097.869405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "695"
+            endingLineNumber = "695"
+            landmarkName = "-segmentView:didSelectItemsAtIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "magicCamera/faceView/viewCon/ViewController.m"
+            timestampString = "548677097.870095"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "763"
+            endingLineNumber = "763"
+            landmarkName = "-collectionView:numberOfItemsInSection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
